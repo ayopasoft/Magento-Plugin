@@ -27,7 +27,7 @@ class Ayopa_AyopaModule_Model_Observer extends Varien_Event_Observer{
 			$count = 0;
 			foreach ($_options['options'] as $option)
 			{
-				if ($option['label'] == 'Ayopa')
+				if ($option['label'] == 'GroupBuyNSave')
 				{
 					if (!$fb) {
 						unset($_options['options'][$count]);
@@ -57,7 +57,7 @@ class Ayopa_AyopaModule_Model_Observer extends Varien_Event_Observer{
 						        fwrite($fp, "------------[Sales Order Place After - Option]-----------------\n");
 						        Ayopa_AyopaModule_Model_Observer::set_array_to_file($fp,$option,"a+");
 						        fclose($fp); */	
-				if ($option['label'] == 'Ayopa')
+				if ($option['label'] == 'GroupBuyNSave')
 				{
 					
 					if ($fb != "") {

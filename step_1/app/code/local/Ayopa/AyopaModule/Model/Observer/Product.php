@@ -14,7 +14,7 @@ class Ayopa_AyopaModule_Model_Observer_Product
     if ($block instanceof Mage_Adminhtml_Block_Catalog_Product_Edit_Tabs) {
       if ($this->_getRequest()->getActionName() == 'edit' || $this->_getRequest()->getParam('type')) {
         $block->addTab('ayopa-product-tab-01', array(
-          'label'     => 'Ayopa',
+          'label'     => 'GroupBuyNSave',
           'content'   => $block->getLayout()->createBlock('adminhtml/template', 'ayopa-product-content', array('template' => 'ayopamodule/content.phtml'))->toHtml(),
         ));
       }

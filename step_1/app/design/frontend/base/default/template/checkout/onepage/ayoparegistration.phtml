@@ -8,7 +8,7 @@
 	<?php $productOptions= $item->getProduct()->getTypeInstance(true)->getOrderOptions($item->getProduct()); ?>
 	<?php foreach ($productOptions['options'] as $_option): ?>
 		
-			<?php if ($_option['label'] == 'Ayopa'): ?>
+			<?php if ($_option['label'] == 'GroupBuyNSave'): ?>
 				<?php $ayopaOpt = $_option['option_id'] ?>
 			<?php endif; ?>
 		

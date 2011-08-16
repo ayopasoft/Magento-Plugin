@@ -29,7 +29,7 @@
 	
 	if (count($_options)) {
 		foreach ($_options as $_option){
-			if ($_option->getTitle() == 'Ayopa')
+			if ($_option->getTitle() == 'GroupBuyNSave')
 			{
 				$found = true;
 				
@@ -55,7 +55,7 @@
 						'price_type'	=> 'fixed'
 					  );
 			
-			$helper = Mage::helper('ayopamodule')->setCustomOption($_product->getID(), 'Ayopa', $options, $values);
+			$helper = Mage::helper('ayopamodule')->setCustomOption($_product->getID(), 'GroupBuyNSave', $options, $values);
 		} catch (Exception $e) {
 			echo $e->getMessage();
 		}
@@ -68,7 +68,7 @@
 
 <?php if (count($_options)):?>
 	<?php foreach($_options as $_option): ?>
-    	<?php if($_option->getTitle() == "Ayopa"): ?>
+    	<?php if($_option->getTitle() == "GroupBuyNSave"): ?>
 			<?php $ayopaOpt = $_option->getId(); ?>
 			<?php if (!$auction): ?>
 				<?php	//$_option->delete(); ?>
