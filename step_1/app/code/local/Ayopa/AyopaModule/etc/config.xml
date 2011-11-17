@@ -126,5 +126,15 @@
 	      </catalog_product_save_after>
 	    </events>
 	  </adminhtml>
+	
+	 <frontend>
+	  <layout>
+	    <updates>
+	      <ayopamodule>
+	        <file>groupbuy.xml</file>
+	      </ayopamodule>
+	    </updates>
+	  </layout>
+	</frontend>	
     
 </config>

@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 <layout version="0.1.0">
-	<!-- If you already have a local.xml file, please start and stop your copy where indicated -->
-	<!-- Start Copy Here -->
+	<!-- CATALOG PAGES -->
 		<catalog_product_view><!-- 2columns-right -->
 			<reference name="content">
 				<reference name="product.info.addtocart">
@@ -16,5 +15,4 @@
 				</reference>
 			</reference>			
 		</checkout_onepage_index>
-	<!-- End Copy Here -->
 </layout>
